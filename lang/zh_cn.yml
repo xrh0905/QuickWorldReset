@@ -1,0 +1,47 @@
+quick_world_reset:
+  help_message: |
+    ------ {1} v{2} ------
+    一个快速§c删档§r插件
+    §d【格式说明】§r
+    §7{0}§r 显示帮助信息
+    §7{0} run§r 删档
+    §7{0} confirm§r 再次确认是否进行§c删档§r
+    §7{0} abort§r 在任何时候键入此指令可中断§c删档§r
+    §7{0} reload§r 重新加载配置文件
+
+  lock.warning: 正在{0}中，请等待操作执行完成
+  operations:
+    reset: §c删档§r
+
+  reset:
+    echo_action: 准备将存档删除
+    confirm_hint: 使用§7{0} confirm§r 确认§c删档§r
+    confirm_hover: 点击确认
+    abort_hint: §7{0} abort§r 取消
+    abort_hover: 点击取消
+
+  confirm_reset.nothing_to_confirm: 没有什么需要确认的
+
+  do_reset:
+    countdown.intro: 10秒后关闭服务器§c删档§r
+    countdown.text: 还有{0}秒，将§c删档
+    countdown.hover: 点击终止删档！
+    abort: §c删档§r被中断！
+
+  trigger_abort.abort: 终止操作！
+
+  print_help:
+    hotbar: §d【快捷操作】§r
+    click_to_reset:
+      text: ">>> §c点我删档§r <<<"
+      hover: 也就是重置存档
+      command: "{0} run"
+
+  unknown_command:
+    text: 参数错误！请输入§7{0}§r以获取插件信息
+    hover: 点击查看帮助
+  command:
+    permission_denied: 权限不足
+  register:
+    summory_help: §c删档§r
+    show_help: 点击查看帮助信息

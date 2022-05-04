@@ -1,0 +1,22 @@
+{
+	"id": "quick_world_reset",
+	"version": "1.0.1",
+	"name": "Quick World Reset",
+	"description": {
+		"en_us": "A world reset plugin",
+		"zh_cn": "删档插件"
+	},
+	"author": [
+		"xrh0905"
+	],
+	"link": "https://github.com/xrh0905/QuickWorldReset",
+	"dependencies": {
+		"mcdreforged": ">=2.1.2"
+	},
+
+	"archive_name": "QuickWorldReset-v{version}",
+	"resources": [
+		"lang",
+		"LICENSE"
+	]
+}

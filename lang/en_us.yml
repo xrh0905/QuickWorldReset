@@ -1,0 +1,47 @@
+quick_world_reset:
+  help_message: |
+    ------ {1} v{2} ------
+    A plugin that supports multi slots world §abackup§r and backup §crestore§r
+    §d[Format]§r
+    §7{0}§r Display help message
+    §7{0} run§r §cDelete§r the world
+    §7{0} confirm§r Use after execute back to confirm §creset§r execution
+    §7{0} abort§r Abort §creseting§r
+    §7{0} reload§r Reload config file
+
+  lock.warning: Executing "{0}", please don't spam
+  operations:
+    reset: §cReset§r
+
+  reset:
+    echo_action: Gonna reset the world
+    confirm_hint: Use §7{0} confirm§r to confirm §creset§r
+    confirm_hover: Click to confirm
+    abort_hint: §7{0} abort§r to abort
+    abort_hover: Click to abort
+
+  confirm_reset.nothing_to_confirm: Nothing to confirm
+
+  do_reset:
+    countdown.intro: §cReset§r after 10 second
+    countdown.text: "{0} second later the world will be §cdeleted§r"
+    countdown.hover: Click to ABORT reset!
+    abort: §cReset§r aborted!
+
+  trigger_abort.abort: Operation terminated!
+
+  print_help:
+    hotbar: §d[Hotbar]§r
+    click_to_reset:
+      text: ">>> §cClick me to reset the world§r <<<"
+      hover: as known as delete the world
+      command: "{0} run"
+
+  unknown_command:
+    text: Unknown command, input §7{0}§r for more information
+    hover: Click to see help
+  command:
+    permission_denied: Permission Denied
+  register:
+    summory_help: §cdelete§r your world
+    show_help: Click to see help
